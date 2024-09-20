@@ -40,9 +40,12 @@ This script uses environment variables to store sensitive information so a `.env
 | FROM_PHONE  | Twilio phone number             |
 | TO_PHONE    | Phone number to send message to |
 
-After the environment variables have been set, you can run the script in the source directory
+After the environment variables have been set, you can run the script in the source directory:
 
-`python CraigsListScraper.py`
+```
+cd src
+python CraigslistScraper.py
+```
 
 - [posts.txt](src/posts.txt) is used to store posts that have already been seen so they aren't revisited
 - [results.csv](src/results.csv) will be populated with the new posts discovered during a run
